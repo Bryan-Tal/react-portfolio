@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg"
 import "../css/Contact.css"
-
+import resumePath from "../assets/img/BryanTalavera.pdf"
 export const Contact = () => {
     const formInitialDetails = {
         firstName: "",
@@ -31,14 +31,14 @@ export const Contact = () => {
     }
 
     const handleSubmit = () => {
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbx3zjv4pgJslnDLlYDqifmNensSi9jwMlLd2pgd290jRjrfICFdc-z_Rz20nv86gt-1Ug/exec'
+        const scriptURL = "https://script.google.com/macros/s/AKfycbx3zjv4pgJslnDLlYDqifmNensSi9jwMlLd2pgd290jRjrfICFdc-z_Rz20nv86gt-1Ug/exec"
         
         const form = document.forms['submit-to-google-sheet'];
         
         form.addEventListener('submit', e => {
             
             e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            fetch(scriptURL, { method: 'POST', mode:'no-cors', body: new FormData(form)})
             .then(response => console.log('Success!', response), clearDetails())
             .catch(error => console.error('Error!', error.message) )
   })
@@ -54,6 +54,11 @@ export const Contact = () => {
                     </Col>
                     <Col md={6}>
                         <h2>Get In Touch</h2>
+                         <a href={resumePath} download="Bryan Talavera - Resume">
+                            <button class="standalone"><span>Here's My Resume!</span></button>
+                         </a>
+                         <br /> <br />
+                         
                         <form name="submit-to-google-sheet">
                             <Row>
                                 <Col sm={6} className="px-1">

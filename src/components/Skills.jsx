@@ -41,6 +41,7 @@ export const Skills = () => {
         {name: "Core Python", value: 90},
         {name: "Pandas", value: 85},
         {name: "Scipy.stats",value: 80},
+        {name: "Scipy.stats",value: 80}
       ];
       var barDataJS = [
         {name: "Core JS", value: 85},

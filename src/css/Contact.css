@@ -36,7 +36,7 @@
     color: #121212;
     opacity: 0.8;
   }
-  .contact form button {
+  .contact form button, button {
     font-weight: 700;
     color: #000;
     background-color: #fff;
@@ -47,14 +47,14 @@
     position: relative;
     transition: 0.3s ease-in-out;
   }
-  .contact form button span {
+  .contact form button span, button span {
     z-index: 1;
     position: relative;
   }
-  .contact form button:hover {
+  .contact form button:hover, button:hover {
     color: #fff;
   }
-  .contact form button::before {
+  .contact form button::before, button::before {
     content: "";
     background: #121212;
     width: 0;
@@ -65,7 +65,7 @@
     z-index: 0;
     transition: 0.3s ease-in-out;
   }
-  .contact form button:hover::before {
+  .contact form button:hover::before, button:hover::before {
     width: 100%;
   }
   

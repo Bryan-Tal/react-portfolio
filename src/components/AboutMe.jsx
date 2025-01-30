@@ -39,6 +39,7 @@ export const AboutMe = () => {
                     </div>
                     <div className={activeTab === "Education" ? "tab-contents active-tab" : "tab-contents"}> 
                         <ul>
+                            <li><span>2024</span><br/>Google Data Analytics Professional Certificate - <a href="https://www.credly.com/badges/d51d1b36-ccfe-4cf4-b63e-a473056ba9cc/public_url">Certificate Link</a></li>
                             <li><span>2024</span><br/>B.S. Data Science from UC San Diego</li>
                         </ul>
                     </div>
