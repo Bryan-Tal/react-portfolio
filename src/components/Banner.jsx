@@ -57,7 +57,7 @@ export const Banner = () => {
                             <div className={isVisible ? "animate__animated animate__fadeInDown" : ""}>
                                 <span className="tagline">Welcome to my Portfolio</span>
                                 <h1>{`Hi I'm Bryan, Data`} <span className="wrap">{text}</span> </h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis deleniti illo, suscipit eaque, odit obcaecati officiis quam dolor minus, voluptatum nisi doloremque nemo cum in repudiandae porro illum asperiores? Quam.</p>
+                                <p>Hi, I’m Bryan Talavera—a Data Scientist passionate about turning data into actionable insights. I specialize in predictive modeling, data visualization, and solving real-world problems with innovative solutions. Let’s explore the power of data together!</p>
                                 <button onClick={() => console.log("connect") }> <a className="Banner-link" href="#connect">Let's Connect <ArrowRightCircle size={25}/></a> </button>
                             </div>}
                         </TrackVisibility>

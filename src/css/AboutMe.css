@@ -1,7 +1,8 @@
 /* About Me Section*/
 #about {
-    padding: 80px 80px;
+    padding: 5em 5em;
     color: #ababab;
+    margin-top: -50px;
 }
 
 .row {

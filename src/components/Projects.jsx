@@ -43,13 +43,10 @@ export const Projects = () => {
             <Container>
                 <Row>
                     <Col>
-                        <TrackVisibility>
-                            {({isVisible}) => 
-                            <div className={isVisible ? "animate__animated animate__lightSpeedInRight" : ""}>
-                                <h2>Projects</h2>
-                                <p>Here I have some projects I have done or am currently working on. <br /> Hover over a project to view more information about it! <br /> Click on a project to visit the Github repository.</p>
-                            </div>}
-                        </TrackVisibility>
+                        
+                        <h2>Projects</h2>
+                        <p>Here I have some projects I have done or am currently working on. <br /> Hover over a project to view more information about it! <br /> Click on a project to visit the Github repository.</p>
+                            
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab" defaultActiveKey="/home">
                             <Nav.Item>

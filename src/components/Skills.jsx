@@ -36,12 +36,16 @@ export const Skills = () => {
           items: 1
         }
       };
-
+      var barSoftSkills = [
+        {name: "Communication", value: 85},
+        {name: "Problem Solving", value: 90},
+        {name: "Collaboration", value: 80},
+        {name: "Process Improvement", value: 85}
+      ];
       var barDataLanguages = [
         {name: "Python", value: 90},
         {name: "SQL", value: 70},
-        {name: "JavaScript",value: 80},
-        {name: "HTML/CSS", value: 75},
+        {name: "R",value: 80},
       ];
       var barDataJS = [
         {name: "Core JS", value: 85},
@@ -50,13 +54,21 @@ export const Skills = () => {
       var barPythonPackages = [
         {name: "Pandas", value: 90},
         {name: "Statsmodels", value: 85},
-        {name: "Scikit-learn", value: 90}
-      ]
+        {name: "Scikit-learn", value: 90},
+        {name: "Scipy", value: 80},
+      ];
       var barDataVizTools = [
         {name: "Seaborn", value: 80},
         {name: "Matplotlib", value: 85},
         {name: "d3.js", value: 70}
-      ]
+      ];
+      var barWebDev = [
+        {name: "HTML", value: 90},
+        {name: "CSS", value: 75},
+        {name: "JavaScript",value: 85},
+        {name: "react.js", value: 80},
+        
+      ];
 
       
       
@@ -66,18 +78,22 @@ export const Skills = () => {
                 <Row>
                     <Col>
                     <div className="skill-bx">
-                      <TrackVisibility>
-                      {({isVisible}) => 
-                      <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                          <h2>Skills</h2>
-                          <p>Proficient in Python, SQL, and JavaScript, with expertise in data analysis, visualization, and predictive modeling. Experienced in machine learning frameworks, statistical analysis, and database management. Adept at using tools like Tableau, scikit-learn, and pandas to deliver actionable insights.</p>
-                      </div>}
-                      </TrackVisibility>
-                        
+                      
+                        <h2>Skills</h2>
+                        <p>Proficient in Python, SQL, and JavaScript, with expertise in data analysis, visualization, and predictive modeling. Experienced in machine learning frameworks, statistical analysis, and database management. Adept at using tools like Tableau, scikit-learn, and pandas to deliver actionable insights.</p>
+                
                         <Carousel responsive={responsive} infinite={true} className='skill-slider'>
+                          <div className='item'>
+                            <UseCreateBarChart data={barSoftSkills}/>
+                            <h5>Soft Skills</h5>
+                          </div>
                           <div className='item'>
                             <UseCreateBarChart data={barDataLanguages}/>
                             <h5>Programming Languages</h5>
+                          </div>
+                          <div className='item'>
+                            <UseCreateBarChart data={barWebDev}/>
+                            <h5>Web Development</h5>
                           </div>
                           <div className='item'>
                             <UseCreateBarChart data={barPythonPackages}/>
