@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons"
-import headerImg from "../assets/img/header-img.svg"
+import headerImg from "../assets/img/header-img2.svg"
 import { useEffect, useState } from "react";
 import "../css/Banner.css";
 import "animate.css";
@@ -9,7 +9,7 @@ import { isVisible } from "@testing-library/user-event/dist/utils";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Data Scientist","Data Analyst","Data Profrssional"];
+    const toRotate = ["Scientist","Analyst","Professional"];
     const [text, setText] = useState('');
     const [index, setIndex] = useState(1);
     const [delta, setDelta] = useState(300 - Math.random() * 100)
@@ -56,7 +56,7 @@ export const Banner = () => {
                         {({isVisible}) => 
                             <div className={isVisible ? "animate__animated animate__fadeInDown" : ""}>
                                 <span className="tagline">Welcome to my Portfolio</span>
-                                <h1>{`Hi I'm Bryan,`} <span className="wrap">{text}</span> </h1>
+                                <h1>{`Hi I'm Bryan, Data`} <span className="wrap">{text}</span> </h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis deleniti illo, suscipit eaque, odit obcaecati officiis quam dolor minus, voluptatum nisi doloremque nemo cum in repudiandae porro illum asperiores? Quam.</p>
                                 <button onClick={() => console.log("connect") }> <a className="Banner-link" href="#connect">Let's Connect <ArrowRightCircle size={25}/></a> </button>
                             </div>}

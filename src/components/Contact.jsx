@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import contactImg from "../assets/img/contact-img.svg"
+import contactImg from "../assets/img/contact-img.png"
 import "../css/Contact.css"
 import resumePath from "../assets/img/BryanTalavera.pdf"
 export const Contact = () => {

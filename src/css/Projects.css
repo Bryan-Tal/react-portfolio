@@ -79,6 +79,8 @@
     position: relative;
     border-radius: 30px;
     overflow: hidden;
+    width: 25em;
+    height: 14em;
     margin-bottom: 24px;
   }
   /* This is responsible for the red dropdown when hovering over a project */
