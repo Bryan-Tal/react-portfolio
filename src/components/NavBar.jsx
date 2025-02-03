@@ -54,6 +54,9 @@ export const NavBar = () => {
                 <div className="social-icon">
                   <a href="https://www.linkedin.com/in/bryan-t-163001290/"><img src={navIcon1} alt="" /></a>
                 </div>
+                <div className="social-icon">
+                  <a href="https://public.tableau.com/app/profile/bryan.talavera/vizzes"><img src={navIcon2} alt="" /></a>
+                </div>
                 <HashLink to='#connect'>
                   <button className="vvd"><span>Let’s Connect</span></button>
                 </HashLink>
