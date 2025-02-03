@@ -19,10 +19,10 @@ export const AboutMe = () => {
                 <div class="about-col-1">
                     <img src={ucsdTriton} alt="UCSD Triton" style={{height: "10 em"}}/>
                 </div>
-                <div class="about-col-2">
+                <div class="about-col-2 block">
                     <TrackVisibility>
                         {({isVisible}) => 
-                        <div className={isVisible ? "animate__animated animate__backInRight" : ""}>
+                        <div className={isVisible ? "animate__animated animate__backInRight show" : ""}>
                         <h1 class="subtitle">About Me</h1>
                         <img src="" alt="" />
                         <p>I’m a Data Science graduate with hands-on experience in Python, data visualization, and machine learning. I’ve developed predictive models to solve real-world challenges in transportation and HR, leveraging skills in data integration, analysis, and visualization. Passionate about continuous learning, I’m eager to collaborate and create innovative solutions for complex data problems.</p>

@@ -7,8 +7,8 @@ import { ProjectCard } from "./ProjectCard";
 // import colorSharp2 from "../assets/img/color-sharp2-halved.png";
 // import background from "../assets/img/project-background.jpg"
 import "../css/Projects.css";
-import "animate.css";
 import TrackVisibility from "react-on-screen";
+
 export const Projects = () => {
 
     const projects = [
@@ -43,9 +43,14 @@ export const Projects = () => {
             <Container>
                 <Row>
                     <Col>
-                        
+                    <TrackVisibility>
+                        {({isVisible}) => 
+                        <div className={isVisible ? "animate__animated animate__fadeInUp" : ""}>
                         <h2>Projects</h2>
                         <p>Here I have some projects I have done or am currently working on. <br /> Hover over a project to view more information about it! <br /> Click on a project to visit the Github repository.</p>
+                        </div>}
+                    </TrackVisibility>
+                        
                             
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab" defaultActiveKey="/home">

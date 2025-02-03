@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import "../css/Banner.css";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import { isVisible } from "@testing-library/user-event/dist/utils";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
@@ -48,7 +47,7 @@ export const Banner = () => {
         }
       }
     return ( 
-        <section className="banner" id="home">
+        <section className="banner " id="home">
             <Container>
                 <Row>
                     <Col xs={12} md={6} xl={7}>
