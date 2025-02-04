@@ -23,7 +23,7 @@ export const NavBar = () => {
             setScrolled(false);
             break;
             
-          case window.scrollY >= 50 && window.scrollY < 1300:
+          case window.scrollY >= 50 && window.scrollY < 800:
             onUpdateActiveLink('about');
             setScrolled(true);
             break;
