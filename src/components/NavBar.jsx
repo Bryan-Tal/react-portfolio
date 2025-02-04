@@ -16,10 +16,25 @@ export const NavBar = () => {
   
     useEffect(() => {
       const onScroll = () => {
-        if (window.scrollY > 50) {
-          setScrolled(true);
-        } else {
-          setScrolled(false);
+
+        switch (true) {
+          case window.scrollY < 50:
+            onUpdateActiveLink('home');
+            setScrolled(false);
+            break;
+            
+          case window.scrollY >= 50 && window.scrollY < 1300:
+            onUpdateActiveLink('about');
+            setScrolled(true);
+            break;
+        
+          case window.scrollY >= 800 && window.scrollY < 1700:
+            onUpdateActiveLink('skills');
+            break;
+        
+          case window.scrollY >= 1700 && window.scrollY < 2100:
+            onUpdateActiveLink('projects');
+            break;
         }
       }
   
