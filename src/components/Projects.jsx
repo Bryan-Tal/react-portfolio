@@ -33,9 +33,9 @@ export const Projects = () => {
         },
         {
             title: "Visual Analysis of the S&P500 ETF",
-            description: "This is a visual analysis of the SPY stock using d3.js",
+            description: "This is a visual analysis of the SPY stock using HTML, CSS, and d3.js",
             imgUrl: projImg4,
-            projectUrl: ""
+            projectUrl: "https://bryan-tal.github.io/SPY-Visual-Analysis/"
         },
     ];
     return ( 
@@ -74,7 +74,7 @@ export const Projects = () => {
                                     }
                                 </Row>
                             </Tab.Pane>
-                            <Tab.Pane eventKey="second"> Here I will be showcasing visualizations that I think are neat.</Tab.Pane>
+                            <Tab.Pane eventKey="second"> Here I will be showcasing visualizations.</Tab.Pane>
                         </Tab.Content>
                         </Tab.Container>
                            
