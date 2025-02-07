@@ -30,10 +30,12 @@ export const NavBar = () => {
         
           case window.scrollY >= 800 && window.scrollY < 1700:
             onUpdateActiveLink('skills');
+            setScrolled(true);
             break;
         
           case window.scrollY >= 1700 && window.scrollY < 2100:
             onUpdateActiveLink('projects');
+            setScrolled(true);
             break;
         }
       }
