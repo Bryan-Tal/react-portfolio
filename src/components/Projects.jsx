@@ -3,6 +3,7 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.jpg";
+import dashboard1 from "../assets/img/dashboard1.png";
 import { ProjectCard } from "./ProjectCard";
 // import colorSharp2 from "../assets/img/color-sharp2-halved.png";
 // import background from "../assets/img/project-background.jpg"
@@ -38,6 +39,16 @@ export const Projects = () => {
             projectUrl: "https://bryan-tal.github.io/SPY-Visual-Analysis/"
         },
     ];
+
+    const dashboards = [
+        
+        {
+            title: "Company Wide Sales Dashboard",
+            description: "This is an interactive sales dashboard which displays metrics such as Average Monthly Sales by Site Code and Distribution of Sales by Month",
+            imgUrl: dashboard1,
+            projectUrl: "https://public.tableau.com/app/profile/bryan.talavera/viz/SalesDashboard_17423367310450/SalesDashboard",
+        },
+    ]
     return ( 
         <section className="project" id="projects">
             <Container>
@@ -58,7 +69,7 @@ export const Projects = () => {
                                 <Nav.Link eventKey="first">Projects</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="second">Visualizations</Nav.Link>
+                                <Nav.Link eventKey="second">Dashboards</Nav.Link>
                             </Nav.Item>
                         </Nav>
                         <Tab.Content>
@@ -74,7 +85,20 @@ export const Projects = () => {
                                     }
                                 </Row>
                             </Tab.Pane>
-                            <Tab.Pane eventKey="second"> Here I will be showcasing visualizations.</Tab.Pane>
+                            <Tab.Pane eventKey="second"> Here I will be showcasing dashboards I have created.
+                                    <Row>
+                                    {
+                                        dashboards.map((project,index) => {
+                                            return (
+                                                <ProjectCard key={index}
+                                                {...project} />
+                                            )
+                                        })
+                                    }
+                                    </Row>
+
+
+                            </Tab.Pane>
                         </Tab.Content>
                         </Tab.Container>
                            
