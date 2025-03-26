@@ -25,20 +25,15 @@ export const Skills = () => {
           items: 1
         }
       };
-      var barSoftSkills = [
-        {name: "Communication", value: 85},
-        {name: "Problem Solving", value: 90},
-        {name: "Collaboration", value: 80},
-        {name: "Process Improvement", value: 85}
-      ];
-      var barDataLanguages = [
+      
+      var programmingScripting = [
         {name: "Python", value: 90},
-        {name: "SQL", value: 70},
-        {name: "R",value: 80},
+        {name: "SQL", value: 85},
+        {name: "R",value: 75},
       ];
       var barWebDev = [
         {name: "HTML", value: 90},
-        {name: "CSS", value: 75},
+        {name: "CSS", value: 80},
         {name: "JavaScript",value: 85},
         {name: "react.js", value: 80},
         
@@ -47,12 +42,14 @@ export const Skills = () => {
         {name: "Pandas", value: 90},
         {name: "Statsmodels", value: 85},
         {name: "Scikit-learn", value: 90},
-        {name: "Scipy", value: 80},
+        {name: "SciPy", value: 80},
       ];
       var barDataVizTools = [
+        {name: "Tableau", value: 85},
         {name: "Seaborn", value: 80},
         {name: "Matplotlib", value: 85},
-        {name: "d3.js", value: 70}
+        {name: "d3.js", value: 70},
+        {name: "Microsoft Excel", value: 80}
       ];
       
 
@@ -72,27 +69,24 @@ export const Skills = () => {
                         </div>}
                       </TrackVisibility>
                         
-                        <Carousel responsive={responsive} infinite={true} className='skill-slider'>
+                        <Carousel responsive={responsive} infinite={false} className='skill-slider'>
                           <div className='item'>
-                            <UseCreateBarChart data={barSoftSkills}/>
-                            <h5>Soft Skills</h5>
-                          </div>
-                          <div className='item'>
-                            <UseCreateBarChart data={barDataLanguages}/>
-                            <h5>Programming Languages</h5>
+                            <UseCreateBarChart data={programmingScripting}/>
+                            <h5>Programming & Scripting</h5>
                           </div>
                           <div className='item'>
                             <UseCreateBarChart data={barWebDev}/>
                             <h5>Web Development</h5>
                           </div>
                           <div className='item'>
+                            <UseCreateBarChart data={barDataVizTools}/>
+                            <h5>Data Visualization & Reporting</h5>
+                          </div>
+                          <div className='item'>
                             <UseCreateBarChart data={barPythonPackages}/>
                             <h5>Python Packages</h5>
                           </div>
-                          <div className='item'>
-                            <UseCreateBarChart data={barDataVizTools}/>
-                            <h5>Data Visualization Tools</h5>
-                          </div>
+                          
                         </Carousel>
                     </div>
                     </Col>
