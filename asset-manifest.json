@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.01b3bc04.css",
-    "main.js": "/react-portfolio/static/js/main.08a8d532.js",
+    "main.js": "/react-portfolio/static/js/main.d49dfa7c.js",
     "static/js/453.bb257cf5.chunk.js": "/react-portfolio/static/js/453.bb257cf5.chunk.js",
     "static/media/project-img3.png": "/react-portfolio/static/media/project-img3.bf32b1f0c88640c32453.png",
     "static/media/contact-img.png": "/react-portfolio/static/media/contact-img.8ec9f3009ca2305b89e3.png",
@@ -15,6 +15,7 @@
     "static/media/BryanTalavera.pdf": "/react-portfolio/static/media/BryanTalavera.5cfe58166759c9723937.pdf",
     "static/media/project-img1.png": "/react-portfolio/static/media/project-img1.4b03c6436f2be19b4e4d.png",
     "static/media/tritons.png": "/react-portfolio/static/media/tritons.8c198d26abc903bd9c64.png",
+    "static/media/project-img5.webp": "/react-portfolio/static/media/project-img5.769c7cf80c05f4104148.webp",
     "static/media/header-img2.svg": "/react-portfolio/static/media/header-img2.88514ff43916c771c410c982c30c79e4.svg",
     "static/media/revicons.eot": "/react-portfolio/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/react-portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
@@ -24,11 +25,11 @@
     "index.html": "/react-portfolio/index.html",
     "static/media/nav-icon1.svg": "/react-portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "main.01b3bc04.css.map": "/react-portfolio/static/css/main.01b3bc04.css.map",
-    "main.08a8d532.js.map": "/react-portfolio/static/js/main.08a8d532.js.map",
+    "main.d49dfa7c.js.map": "/react-portfolio/static/js/main.d49dfa7c.js.map",
     "453.bb257cf5.chunk.js.map": "/react-portfolio/static/js/453.bb257cf5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.01b3bc04.css",
-    "static/js/main.08a8d532.js"
+    "static/js/main.d49dfa7c.js"
   ]
 }
