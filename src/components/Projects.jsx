@@ -3,6 +3,7 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.jpg";
+import projImg5 from "../assets/img/project-img5.webp";
 import dashboard1 from "../assets/img/dashboard1.png";
 import { ProjectCard } from "./ProjectCard";
 // import colorSharp2 from "../assets/img/color-sharp2-halved.png";
@@ -13,16 +14,21 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
 
     const projects = [
-        
         {
-            title: "Providing Data Driven Suggestions",
-            description: "In this project I created a decision tree, random forest model, and XGBoost model to predict employee turnover.",
+            title: "Predicting House Prices",
+            description: "I created a Multiple Linear Regression Model from scratch to predict house prices.",
+            imgUrl: projImg5,
+            projectUrl: "https://github.com/Bryan-Tal/Predicting_House_Prices_OLS",
+        },
+        {
+            title: "Predicting Employee Churn",
+            description: "I created a decision tree, random forest model, and XGBoost model to predict employee turnover.",
             imgUrl: projImg1,
-            projectUrl: "https://github.com/Bryan-Tal/Providing_Data_Driven_Suggestions",
+            projectUrl: "https://github.com/Bryan-Tal/Predicting_Employee_Churn",
         },
         {
             title: "Predicting NYC Taxi Gratuities",
-            description: "In this project I created a random forest model, and XGBoost model to predict generous rider gratuity.",
+            description: "I created a random forest model, and XGBoost model to predict generous rider gratuity.",
             imgUrl: projImg2,
             projectUrl: "https://github.com/Bryan-Tal/Predicting_NYC_Taxi_Gratuities"
         },
