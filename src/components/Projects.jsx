@@ -14,27 +14,27 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
 
     const projects = [
-        {
-            title: "Predicting House Prices",
-            description: "I created a Multiple Linear Regression Model from scratch to predict house prices.",
-            imgUrl: projImg5,
-            projectUrl: "https://github.com/Bryan-Tal/Predicting_House_Prices_OLS",
-        },
+        // {
+        //     title: "Predicting House Prices",
+        //     description: "I created a Multiple Linear Regression Model from scratch to predict house prices.",
+        //     imgUrl: projImg5,
+        //     projectUrl: "https://github.com/Bryan-Tal/Predicting_House_Prices_OLS",
+        // },
         {
             title: "Predicting Employee Churn",
-            description: "I created a decision tree, random forest model, and XGBoost model to predict employee turnover.",
+            description: "Used decision tree, random forest, and XGBoost models to predict employee attrition with 98.2% accuracy and 90% AUC. Identified satisfaction level, monthly hours, and evaluation scores as key churn indicators using HR data.",
             imgUrl: projImg1,
             projectUrl: "https://github.com/Bryan-Tal/Predicting_Employee_Churn",
         },
         {
-            title: "Predicting NYC Taxi Gratuities",
-            description: "I created a random forest model, and XGBoost model to predict generous rider gratuity.",
+            title: "Predicting Generous Rider Gratuity",
+            description: "Built machine learning models to classify high tippers (>20%) using 2017 NYC taxi trip data, with the final XGBoost model achieving 83.2% accuracy. Found fare amount, VendorID, and trip cost to be the most influential features.",
             imgUrl: projImg2,
             projectUrl: "https://github.com/Bryan-Tal/Predicting_NYC_Taxi_Gratuities"
         },
         {
-            title: "MedDash",
-            description: "A medical dashboard designed to aggregate data from various wearable sensors so a user can easily visualize their daily health metrics.",
+            title: "MedDash: Daily Health Dashboard",
+            description: "Developed an interactive dashboard using MongoDB, AWS, and React to help patients track daily health metrics from the Vital API. Focused on real-time visualization, secure login, and intuitive goal tracking to support patient-centered care.",
             imgUrl: projImg3,
             projectUrl: "https://github.com/Bryan-Tal/Med-Dash"
         },
