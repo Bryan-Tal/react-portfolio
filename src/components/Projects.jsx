@@ -4,6 +4,7 @@ import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.jpg";
 import dashboard1 from "../assets/img/dashboard1.png";
+import dashboard2 from "../assets/img/dashboard2.png";
 import { ProjectCard } from "./ProjectCard";
 // import colorSharp2 from "../assets/img/color-sharp2-halved.png";
 // import background from "../assets/img/project-background.jpg"
@@ -41,13 +42,19 @@ export const Projects = () => {
     ];
 
     const dashboards = [
-        
         {
             title: "Company Wide Sales Dashboard",
             description: "This is an interactive sales dashboard which displays metrics such as Average Monthly Sales by Site Code and Distribution of Sales by Month",
-            imgUrl: dashboard1,
+            imgUrl: dashboard2,
             projectUrl: "https://public.tableau.com/app/profile/bryan.talavera/viz/SalesDashboard_17423367310450/SalesDashboard",
         },
+        {
+            title: "Lightning Strike Story",
+            description: "I tell a short story using collected data from lightning strikes",
+            imgUrl: dashboard1,
+            projectUrl: "https://public.tableau.com/app/profile/bryan.talavera/viz/LightningStrikeStory_17278138470600/LightningStrikeStory",
+        },
+        
     ]
     return ( 
         <section className="project" id="projects">
