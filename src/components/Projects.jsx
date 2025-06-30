@@ -48,12 +48,12 @@ export const Projects = () => {
             imgUrl: dashboard2,
             projectUrl: "https://public.tableau.com/app/profile/bryan.talavera/viz/SalesDashboard_17423367310450/SalesDashboard",
         },
-        {
-            title: "Lightning Strike Story",
-            description: "I tell a short story using collected data from lightning strikes",
-            imgUrl: dashboard1,
-            projectUrl: "https://public.tableau.com/app/profile/bryan.talavera/viz/LightningStrikeStory_17278138470600/LightningStrikeStory",
-        },
+        // {
+        //     title: "Lightning Strike Story",
+        //     description: "I tell a short story using collected data from lightning strikes",
+        //     imgUrl: dashboard1,
+        //     projectUrl: "https://public.tableau.com/app/profile/bryan.talavera/viz/LightningStrikeStory_17278138470600/LightningStrikeStory",
+        // },
         
     ]
     return ( 
