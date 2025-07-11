@@ -5,6 +5,7 @@ import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.jpg";
 import dashboard1 from "../assets/img/dashboard1.png";
 import dashboard2 from "../assets/img/dashboard2.png";
+import dashboard3 from "../assets/img/dashboard3.png";
 import { ProjectCard } from "./ProjectCard";
 // import colorSharp2 from "../assets/img/color-sharp2-halved.png";
 // import background from "../assets/img/project-background.jpg"
@@ -43,17 +44,23 @@ export const Projects = () => {
 
     const dashboards = [
         {
-            title: "Company Wide Sales Dashboard",
-            description: "This is an interactive sales dashboard which displays metrics such as Average Monthly Sales by Site Code and Distribution of Sales by Month",
-            imgUrl: dashboard2,
-            projectUrl: "https://public.tableau.com/app/profile/bryan.talavera/viz/SalesDashboard_17423367310450/SalesDashboard",
+            title: "Exploring Netflix's Global Library (2008–2020)",
+            description: "This dashboard visualizes Netflix's movie and TV show catalog up to the year 2020, offering insights into global distribution, content ratings, top genres, and yearly trends. From international dramas to stand-up comedy, explore how Netflix’s content evolved across countries and categories.",
+            imgUrl: dashboard3,
+            projectUrl: "https://public.tableau.com/app/profile/bryan.talavera/viz/ExploringNetflixsGlobalLibrary2008-2020/NetflixDashboard",
         },
-        // {
-        //     title: "Lightning Strike Story",
-        //     description: "I tell a short story using collected data from lightning strikes",
-        //     imgUrl: dashboard1,
-        //     projectUrl: "https://public.tableau.com/app/profile/bryan.talavera/viz/LightningStrikeStory_17278138470600/LightningStrikeStory",
-        // },
+        {
+            title: "Company-Wide Sales Overview Across U.S. Sites",
+            description: "This interactive dashboard provides a comprehensive view of sales performance by site code across U.S. regions. It highlights key insights including sales distribution, purchase behavior, return volume, and the relationship between sales and quantity to support data-driven decision-making.",
+            imgUrl: dashboard2,
+            projectUrl: "https://public.tableau.com/app/profile/bryan.talavera/viz/Company-WideSalesOverviewAcrossU_S_Sites/SalesDashboard",
+        },
+        {
+            title: "Tracking the Surge and Shift of Lightning Strikes in the U.S.",
+            description: "This story highlights a sharp rise in U.S. lightning strikes since 2009 and a geographic shift from the East Coast to the Central region.",
+            imgUrl: dashboard1,
+            projectUrl: "https://public.tableau.com/app/profile/bryan.talavera/viz/TrackingtheSurgeandShiftofLightningStrikesintheU_S_/LightningStrikeStory",
+        },
         
     ]
     return ( 
